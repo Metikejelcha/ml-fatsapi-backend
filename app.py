@@ -25,9 +25,10 @@ class PredictionRequest(BaseModel):
 
 def load_models():
     global dt_model, lr_model, dt_features
-    dt_model = joblib.load("decision_tree_model.joblib")
-    lr_model = joblib.load("logistic_regression_model.joblib")
-    dt_features = joblib.load("dt_feature_names.joblib")
+    dt_model = joblib.load("models/decision_tree_model.joblib")
+    lr_model = joblib.load("models/logistic_regression_model.joblib")
+    dt_features = joblib.load("models/dt_feature_names.joblib")
+
 
 @app.on_event("startup")
 async def startup_event():
