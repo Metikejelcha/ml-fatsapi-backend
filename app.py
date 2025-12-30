@@ -25,8 +25,8 @@ class PredictionRequest(BaseModel):
 
 def load_models():
     global dt_model, lr_model, dt_features
-    dt_model = joblib.load("models/decision_tree_model.joblib")
-    lr_model = joblib.load("models/logistic_regression_model.joblib")
+    dt_model = joblib.load("models/decision_tree_model (2).joblib")
+    lr_model = joblib.load("models/logistic_regression_model (2).joblib")
     dt_features = joblib.load("models/dt_feature_names.joblib")
 
 
